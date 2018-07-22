@@ -1,0 +1,44 @@
+$color-nav: #3A4855
+$color-nav-a: #5C6F80
+$color-content-bg: #F9F9F9
+*
+    // border: 1px solid black
+
+html,body 
+    padding: 0px
+    margin: 0px
+    height: 100%
+    position: relative
+    background-color: $color-content-bg
+
+
+.sidenav
+    width: 200px
+    height: 100%
+    background-color: $color-nav
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+    overflow-x: hidden
+    padding-top: 40px
+
+.sidenav a 
+    padding: 10px 8px 10px 30px
+    text-decoration: none
+    font-size: 18px
+    color: $color-nav-a
+    display: block
+    
+
+.sidenav a:hover 
+    color: #f1f1f1
+    background: darken($color-nav,6)
+
+.sidenav a:active
+    color: #f1f1f1
+    background: darken($color-nav,6)
+
+.content
+    margin-left: 200px
+    background-color: $color-content-bg
