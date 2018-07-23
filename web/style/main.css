@@ -16,6 +16,8 @@ html, body {
   z-index: 1;
   overflow-x: hidden;
   padding-top: 40px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 .sidenav a {
@@ -39,5 +41,47 @@ html, body {
 .content {
   margin-left: 200px;
   background-color: #F9F9F9;
+}
+
+.top {
+  height: 30px;
+  text-align: right;
+  padding-right: 40px;
+  right: 0;
+  color: #3A4855;
+}
+
+.top h4 {
+  margin: 0px;
+  padding: 8px;
+}
+
+.main {
+  padding-left: 30px;
+}
+
+.main h2 {
+  color: #757575;
+}
+
+.info {
+  width: 100%;
+  position: relative;
+}
+
+.info h5 {
+  display: inline-block;
+}
+
+.infoShow {
+  margin-left: 30px;
+}
+
+.infoSelect {
+  display: inline-block;
+}
+
+table {
+  border: 1px solid #000000;
 }
 /*# sourceMappingURL=main.css.map */
