@@ -1,3 +1,8 @@
+@charset "UTF-8";
+* {
+  font-family: 'Hind Madurai',微軟正黑體;
+}
+
 html, body {
   padding: 0px;
   margin: 0px;
@@ -9,7 +14,7 @@ html, body {
 .sidenav {
   width: 200px;
   height: 100%;
-  background-color: #3A4855;
+  background-color: #1F3040;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,12 +35,16 @@ html, body {
 
 .sidenav a:hover {
   color: #f1f1f1;
-  background: #2e3943;
+  background: #15212b;
 }
 
 .sidenav a:active {
   color: #f1f1f1;
-  background: #2e3943;
+  background: #15212b;
+}
+
+i {
+  margin-right: 20px;
 }
 
 .content {
@@ -48,7 +57,7 @@ html, body {
   text-align: right;
   padding-right: 40px;
   right: 0;
-  color: #3A4855;
+  color: #1F3040;
 }
 
 .top h4 {
@@ -61,7 +70,7 @@ html, body {
 }
 
 .main h2 {
-  color: #757575;
+  color: #498BCD;
 }
 
 .info {
@@ -82,6 +91,40 @@ html, body {
 }
 
 table {
-  border: 1px solid #000000;
+  border: 1px solid #ECECEC;
+  border-spacing: 0 0;
+}
+
+tr, td {
+  border: 1px solid #ECECEC;
+}
+
+tr {
+  height: 50px;
+}
+
+td {
+  padding: 0.8em;
+}
+
+.rowNum {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#48c6ef), to(#6f86d6));
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+
+.showInfo, .edit {
+  width: 30px;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: middle;
+  font-size: 16px;
+  color: #5E749E;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,12 @@
-$color-nav: #3A4855
+$color-nav: #1F3040
 $color-nav-a: #5C6F80
 $color-content-bg: #F9F9F9
-$color-title: #757575
+$color-title: #498BCD
+$color-table: #ECECEC
+$color-button: #5E749E
 *
     // border: 1px solid black
+    font-family: 'Hind Madurai',微軟正黑體
 
 html,body 
     padding: 0px
@@ -24,6 +27,7 @@ html,body
     overflow-x: hidden
     padding-top: 40px
     box-shadow: 0px 0px 10px rgba(0,0,0,0.6)
+    
 
 .sidenav a 
     padding: 10px 8px 10px 30px
@@ -40,6 +44,9 @@ html,body
 .sidenav a:active
     color: #f1f1f1
     background: darken($color-nav,6)
+
+i 
+    margin-right: 20px
 
 .content
     margin-left: 200px
@@ -77,5 +84,37 @@ html,body
 .infoSelect
     display: inline-block
 
+
+// table
 table
-    border: 1px solid #000000
+    border: 1px solid #ECECEC
+    border-spacing: 0 0 
+    
+
+tr,td 
+    border: 1px solid #ECECEC
+
+tr 
+    height: 50px
+  
+td 
+    padding: 0.8em
+    
+.rowNum
+    text-align: center
+
+.title
+    text-align: center
+    font-weight: bold
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+
+
+// buttun
+.showInfo,.edit
+    width: 30px
+    border: none
+    outline: none
+    background: none
+    text-align: middle
+    font-size: 16px
+    color: $color-button
