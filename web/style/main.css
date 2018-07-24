@@ -45,6 +45,12 @@ html, body {
 
 i {
   margin-right: 20px;
+  font-size: 16px;
+}
+
+i.fa-bookmark {
+  margin-left: 2px;
+  margin-right: 22px;
 }
 
 .top {
@@ -119,7 +125,7 @@ i {
 }
 
 .infoTable {
-  width: 2000px;
+  width: 2800px;
 }
 
 table {
@@ -162,5 +168,25 @@ td {
 
 .showInfo:hover, .edit:hover {
   color: #E88630;
+}
+
+.pageSelect {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.front, .next {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  text-align: center;
+  line-height: 35px;
+  font-size: 25px;
+  padding-left: 13px;
+  color: #5E749E;
 }
 /*# sourceMappingURL=main.css.map */
