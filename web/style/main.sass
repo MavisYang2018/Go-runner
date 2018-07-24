@@ -1,9 +1,13 @@
-$color-nav: #1F3040
+$color-nav: #1B2631
 $color-nav-a: #5C6F80
 $color-content-bg: #F9F9F9
-$color-title: #498BCD
+$color-title: #E88630
 $color-table: #ECECEC
 $color-button: #5E749E
+$color-button-hover: #E88630
+$color-table-title: #34495E
+$color-table-title-bg: #EAEDED
+$color-content: #626567
 *
     // border: 1px solid black
     font-family: 'Hind Madurai',微軟正黑體
@@ -23,11 +27,11 @@ html,body
     position: fixed
     top: 0
     left: 0
-    z-index: 1
+    z-index: 3
     overflow-x: hidden
-    padding-top: 40px
+    padding-top: 60px
     box-shadow: 0px 0px 10px rgba(0,0,0,0.6)
-    
+     
 
 .sidenav a 
     padding: 10px 8px 10px 30px
@@ -48,25 +52,45 @@ html,body
 i 
     margin-right: 20px
 
-.content
-    margin-left: 200px
-    background-color: $color-content-bg
+
 
 .top    
-    height: 30px
+    position: fixed
+    right: 0
+    top: 0
+    width: 100%
+    height: 50px
     text-align: right
-
-    padding-right: 40px
+    line-height: 50px
+    padding-right: 30px
     right: 0
     color: $color-nav
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+    z-index: 2
+    overflow-y: hidden
+    background: $color-content-bg
 
+.fa-leaf
+    margin-right: 5px
 .top h4 
     margin: 0px
-    padding: 8px
+    
+    display: inline
 
+
+.content
+    z-index: 1
+    
+    position: absolute
+    top: 0px
+    padding-top: 60px
+    margin-left: 200px
+    background-color: $color-content-bg
+       
 .main
+    
     padding-left: 30px
-
+    
 .main h2 
     color: $color-title
 
@@ -80,33 +104,55 @@ i
 
 .infoShow
     margin-left: 30px
+    color: $color-content
 
+.infoNumber
+    color: $color-content
 .infoSelect
     display: inline-block
+  
+    
 
 
 // table
+
+.infolist
+    max-width: 1600px
+    overflow: auto
+
+.infoTable
+    width: 2000px
+    
+
 table
-    border: 1px solid #ECECEC
+    border: 1px solid #EAEDED
     border-spacing: 0 0 
+    color: $color-content
+    
     
 
 tr,td 
-    border: 1px solid #ECECEC
+    border: 1px solid #EAEDED
+    
 
 tr 
-    height: 50px
+    // height: 50px
   
 td 
-    padding: 0.8em
+    
+    padding:  0.5em
+    
     
 .rowNum
     text-align: center
+    color: $color-content
 
 .title
     text-align: center
     font-weight: bold
-    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    background: $color-table-title-bg
+    color: $color-table-title
+    height: 20px
 
 
 // buttun
@@ -118,3 +164,7 @@ td
     text-align: middle
     font-size: 16px
     color: $color-button
+    cursor: pointer
+
+.showInfo:hover,.edit:hover
+    color: $color-button-hover
